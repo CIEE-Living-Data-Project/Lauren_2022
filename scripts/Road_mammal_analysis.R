@@ -46,6 +46,7 @@ roadmammal_clean <- roadmammal %>%
 
 
 ### Making a graph ---------------------
+# making a new branch for figures!
 rm_sum <- roadmammal_clean %>% 
   group_by(RoadSurface) %>%
   summarise_each(funs(sum)) %>%

@@ -1,6 +1,6 @@
 # Lauren_2022
 
-Repository for Productivity and Reproducibility in Ecology and Evolution 2022W1
+## Repository for Productivity and Reproducibility in Ecology and Evolution 2022W1
 
 This project will conduct a short analysis on animal preferences for road type (dirt vs tarmac) in Kruger National Park. I will be using data from the Dryad repository cited below.
 

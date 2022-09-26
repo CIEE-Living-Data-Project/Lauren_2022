@@ -1,22 +1,19 @@
 ---
-title           : "My preregistration for AsPredicted.org"
+title           : "My preregistration for Kruger National Park Animal Study"
 shorttitle      : "My preregistration"
 date            : "`r Sys.setlocale('LC_TIME', 'C'); format(Sys.time(), '%d\\\\. %B %Y')`"
 
 author: 
-  - name        : First Author
+  - name        : Lauren Gill
     affiliation : 1
-  - name        : Ernst-August Doelle
-    affiliation : "1,2"
+  - name        : Second Authour
+    affiliation : "1"
 
 affiliation:
   - id          : 1
-    institution : Wilhelm-Wundt-University
-  - id          : 2
-    institution : Konstanz Business School
+    institution : University of British Columbia
 
 output: prereg::prereg_pdf
-bibliography: references.bib
 ---
 
 How I got here --> installed pre reg package, create RmD and then choose from template and then choose this one
@@ -25,73 +22,41 @@ How I got here --> installed pre reg package, create RmD and then choose from te
 
 ## Data collection
 
-[@kosicka2020]
-
-<!-- Have any data been collected for this study already? (Note: "Yes" is not an accepted answer.) -->
-
-**Yes**, we already collected the data.
-
-**No**, no data have been collected for this study yet.
-
-**It's complicated.** We have already collected some data but explain in Question 8 why readers may consider this a valid **pre**-registration nevertheless.
+**Yes**, data has already been collected for this study,
 
 ## Hypothesis
 
-<!-- What's the main question being asked or hypothesis being tested in this study? -->
-
-> Example: A month-long academic summer program for disadvantaged kids will reduce the drop in academic performance that occurs during the summer.
+Animals will prefer dirt roads in Kruger National Park, and therefore have more herd sightings on dirt roads.
 
 ## Dependent variable
 
 <!-- Describe the key dependent variable(s) specifying how they will be measured. -->
 
-> Example: Simple average GPA across all courses during the first semester after the intervention.
+The dependent variable is the presence or absence of an animal herd.
 
 ## Conditions
 
-<!-- How many and which conditions will participants be assigned to? -->
-
-> Example 1: Two conditions: Offering summer program: yes vs no.
-
-> Example 2: 12 conditions in a mixed design lab study. Participants will be assigned to one of four conditions: math training, verbal training, memory task, or control (4 between-subject conditions). Each participant will complete a math test, a verbal test, and a memory test (3 within-subject conditions).
+The conditions depend on whether the animals were sited on a dirt road or a tarmac road
 
 ## Analyses
 
-<!-- Specify exactly which analyses you will conduct to examine the main question/hypothesis. -->
-
-> Example: Linear regression predicting the simple average GPA in the semester after the intervention with a dummy variable indicating whether the participant was offered the summer program or not (intention-to-treat analysis). We will also conduct the same regression controlling for simple average GPA during the semester before the intervention, gender, & household income (an 8-point scale ranging from 1 = below \$20,000 and 8 = above \$150,000).
+First, I will clean the data for my analyses. Initially the data was collected depending on herd size (either \>6 animals or \<6 animals) but for this analysis I will simply need whether the animal herd was present or absent on the dirt road. Therefore I will turn the data into 0s and 1s for presence absence, and then construct a graph to display the results.
 
 ## Outliers and exclusions
 
-<!-- Describe exactly how outliers will be defined and handled, and your precise rule(s) for excluding observations. -->
-
-> Example 1: We will compute the overall mean and standard deviation across all conditions, and winsorize at 2.5 SD above/below the mean. Example 2: We will exclude participants who incorrectly answer at least 2 of our 3 attention check questions. Example 3: We will exclude any participants who complete the survey in less than 30 seconds.
+I will not consider outliers in this dataset
 
 ## Sample size
 
-<!-- How many observations will be collected or what will determine sample size? No need to justify decision, but be precise about _exactly_ how the number will be determined. -->
-
-> Example: We will offer the program until 500 people have agreed to participate in it or until June 30, 2016 (whichever comes first).
-
-## Other
-
-<!-- Anything else you would like to pre-register? (e.g., secondary analyses, variables collected for exploratory purposes, unusual analyses planned?) -->
-
-> Example: We will include a battery of questions for exploratory purposes, including life satisfaction, amount of videogame playing, and family activity. We will also provide an additional survey with 24 questions assessing achievement orientation. We will not report the results of those analyses for the project being pre-registered. NOTE: If you leave this blank it will read 'Nothing else to pre-register.'
+The sample size will be the numbers of observations recorded on dirt roads, in this data set they recorded 770 observations.
 
 ## Study type
 
-Finally. For record keeping purposes, please tell us the type of study you are pre-registering.
-
--   Class project or assignment
--   Experiment
--   Survey
--   Observational/archival study
--   Other:
+Class project or assignment
 
 # References
 
-## 
+<https://datadryad.org/stash/dataset/doi:10.5061/dryad.bcc2fqzd1>
 
 ```{=tex}
 \vspace{-2pc}

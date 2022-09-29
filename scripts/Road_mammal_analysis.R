@@ -46,6 +46,7 @@ roadmammal_clean <- roadmammal %>%
 
 
 ### Making a graph ---------------------
+# making a new branch for figures!
 rm_sum <- roadmammal_clean %>% 
   group_by(RoadSurface) %>%
   summarise_each(funs(sum)) %>%
@@ -54,10 +55,12 @@ rm_sum <- roadmammal_clean %>%
 rm_graph <- ggplot(rm_sum, aes(fill = RoadSurface, x = Animal, y = Count)) +
   geom_bar(position="dodge", stat="identity") +
   labs(title = 'Animal Herd Count in Kruger National Park on Dirt or Tar Roads') +
-  theme_bw()
+  scale_fill_manual(values = c('burlywood4', 'gray25'))+
+  theme_classic()
 rm_graph
 
 
+### Complete!
 
 
 
